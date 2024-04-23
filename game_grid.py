@@ -144,7 +144,7 @@ class GameGrid:
 
     # Takes list of free tile (tiles which is not connected others), send them one unit down
     def move_free_tiles(self, free_tiles):
-        for row in range(self.grid_height):  # excluding the bottommost row
+        for row in range(self.grid_height):  # excluding the first row at the bottom
             for col in range(self.grid_width):
                 if free_tiles[row][col]:
                     free_tile_copy = copy.deepcopy(self.tile_matrix[row][col])

@@ -582,4 +582,4 @@ class Game:
 # start() function is specified as the entry point (main function) from which
 # the program starts execution
 game = Game()
-game.start()
+game.start() 
